@@ -213,6 +213,10 @@ export default {
     value: {
       type: String,
       default: null
+    },
+    top: {
+      type: String
+      // set top position of swatch
     }
   },
   data () {
@@ -342,6 +346,9 @@ export default {
 
       if (this.popoverTo === 'right') positionStyle = { left: 0 }
       else if (this.popoverTo === 'left') positionStyle = { right: 0 }
+
+      // Added by Dan 02.12.2019 -> to allow the popover to be at correct position when scrolling
+      positionStyle.top = this.top
 
       return {
         ...positionStyle,
