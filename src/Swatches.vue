@@ -349,7 +349,7 @@ export default {
 
       // Added by Dan 02.12.2019 -> to allow the popover to be at correct position when scrolling
       if (this.top) positionStyle.top = this.top
-      console.log('positionStyle', positionStyle)
+      // console.log('positionStyle', positionStyle)
 
       return {
         ...positionStyle,
